@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="4.0"
+	xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+	xmlns:javaee="http://xmlns.jcp.org/xml/ns/javaee"
+	xmlns:xml="http://www.w3.org/XML/1998/namespace"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd">
+	<display-name>Archetype Created Web Application</display-name>
+
+	<servlet>
+		<servlet-name>firstServlet</servlet-name>
+		<servlet-class>com.ty.FirstServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>firstServlet</servlet-name>
+		<url-pattern>/firstServlet</url-pattern>
+	</servlet-mapping>
+
+	<welcome-file-list>
+		<welcome-file>login.html</welcome-file>
+		<welcome-file>Register.html</welcome-file>
+	</welcome-file-list>
+
+	<servlet>
+		<servlet-name>PageA</servlet-name>
+		<servlet-class>com.loadOnServer.PageA</servlet-class>
+		<load-on-startup>1</load-on-startup>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>PageA</servlet-name>
+		<url-pattern>/pagea</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>PageB</servlet-name>
+		<servlet-class>com.loadOnServer.PageB</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>PageB</servlet-name>
+		<url-pattern>/pageb</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>PageC</servlet-name>
+		<servlet-class>com.loadOnServer.PageC</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>PageC</servlet-name>
+		<url-pattern>/pagec</url-pattern>
+	</servlet-mapping>
+
+
+
+</web-app>
